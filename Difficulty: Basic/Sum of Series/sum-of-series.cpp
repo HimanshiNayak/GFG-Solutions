@@ -8,10 +8,9 @@ using namespace std;
 class Solution {
   public:
     long long seriesSum(int n) {
-        return (long long)n * (n + 1) / 2;
+        return (long long) n*(n+1)/2;
     }
 };
-
 
 
 //{ Driver Code Starts.
