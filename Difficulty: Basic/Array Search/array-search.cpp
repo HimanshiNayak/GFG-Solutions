@@ -17,7 +17,7 @@ using namespace std;
 
         return -1; // Element not found
     }
-};
+}; //cant use binary as not sorted
 
 
 //{ Driver Code Starts.
