@@ -6,21 +6,40 @@ using namespace std;
 
 // } Driver Code Ends
 // User function Template for C++
+// class Solution {
+//   public:
+//   double power(double b, int e) {
+//         if (e == 0) return 1;
+//         if (e < 0) return 1 / power(b, -e);
+
+//         double half = power(b, e / 2);
+
+//         if (e % 2 == 0) {
+//             return half * half;
+//         } else {
+//             return b * half * half;
+//         }
+//     }
+// };
+
 class Solution {
   public:
   double power(double b, int e) {
-        if (e == 0) return 1;
-        if (e < 0) return 1 / power(b, -e);
-
-        double half = power(b, e / 2);
-
-        if (e % 2 == 0) {
-            return half * half;
-        } else {
-            return b * half * half;
-        }
-    }
+   //when e==0
+   if(e==0)return 1;
+   else if(e<0)return 1/power(b,-e);
+  
+       double half = power(b,e/2);
+       if(e%2==0){
+           return half *half;
+       }
+       else {
+           return b*half*half;
+       };
+   
+  }
 };
+
 
 //{ Driver Code Starts.
 
